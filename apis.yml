@@ -1,7 +1,16 @@
 aid: octave-bioscience
 name: Octave Bioscience
-description: 'Octave Bioscience is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Octave Bioscience is a precision neurology company founded in 2014 and headquartered
+  in Menlo Park, California, that develops blood-based multi-protein biomarker tests for chronic
+  neurological disease. Its commercially available Octave Multiple Sclerosis Disease Activity (MSDA)
+  Test measures a panel of serum proteins to produce a quantitative disease activity score used
+  alongside clinical and imaging assessment, and is available across the United States through a
+  strategic collaboration with Quest Diagnostics. The company is also developing a Multiple Sclerosis
+  Disease Progression (MSDP) test and a Parkinson''s disease biomarker assay supported by a Michael
+  J. Fox Foundation grant. Octave publishes a public trust center documenting HITRUST, ISO/IEC
+  27001:2022, ISO/IEC 42001:2023, HIPAA and GDPR posture, but operates no public developer program,
+  API reference, SDK or machine-readable specification.'
+image: https://cdn.prod.website-files.com/69ea29820ae8c216aa6d3eb3/69ee5d8d78bf430b8d8cc256_octave_logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/octave-bioscience/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +21,14 @@ created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
+- Health Care
+- Life Sciences
+- Diagnostics
+- Neurology
+- Precision Medicine
+- Biotechnology
+- Laboratory Testing
+- Multiple Sclerosis
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,53 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/octave-bioscience-domain-security.yml
+- type: TrustCenter
+  url: security/octave-bioscience-trust-center.yml
+- type: LLMsTxt
+  url: llms/octave-bioscience-llms.txt
 - type: Website
+  url: https://www.octavebio.com/
+- type: About
+  url: https://www.octavebio.com/about
+- type: Support
+  url: https://www.octavebio.com/contact
+- type: News
+  url: https://www.octavebio.com/news
+- type: Resources
+  url: https://www.octavebio.com/resources
+- type: Careers
+  url: https://www.octavebio.com/careers
+- type: TermsOfService
+  url: https://www.octavebio.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.octavebio.com/privacy-policy
+- type: Compliance
+  url: https://www.octavebio.com/trust-center
+- type: Profile
   url: https://forgeglobal.com/octave-bioscience_stock/
+x-enrichment:
+  date: '2026-08-04'
+  status: minimal
+  pass: local-v1
+  artifacts_added: 4
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Octave Bioscience runs a Webflow marketing site for a lab-developed blood test; test ordering is
+    a paper form or a provider contact form routed to Quest Diagnostics, and api./developer./docs./
+    portal./app.octavebio.com do not resolve in DNS, so there is no developer surface to read.
+  evidence:
+  - url: https://www.octavebio.com/openapi.json
+    status: 404
+  - url: https://www.octavebio.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.octavebio.com/llms.txt
+    status: 404
+  - url: https://www.octavebio.com/providers
+    status: 200
+  - url: https://www.octavebio.com/trust-center
+    status: 200
+  checked: '2026-08-04'

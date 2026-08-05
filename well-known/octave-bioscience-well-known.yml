@@ -1,0 +1,33 @@
+generated: '2026-08-04'
+method: probed
+source: live probes of the octavebio.com web host
+host: https://www.octavebio.com
+summary:
+  documents_found: 0
+  note: >-
+    Every /.well-known/ path probed returned 404 from the Webflow-hosted marketing site. There is
+    no API host (api./developer./docs./portal./app.octavebio.com do not resolve), so there was no
+    second host to probe. Recorded as evidence of absence — no pointer is wired for this file.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/oauth-protected-resource
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /openapi.json
+  status: 404
+- path: /api-docs
+  status: 404

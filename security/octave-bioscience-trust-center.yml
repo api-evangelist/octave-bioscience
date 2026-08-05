@@ -1,0 +1,40 @@
+generated: '2026-08-04'
+method: searched
+probe: true
+source: https://www.octavebio.com/trust-center
+url: https://www.octavebio.com/trust-center
+statement: >-
+  Octave Bioscience is committed to upholding the highest standards for data confidentiality,
+  integrity, and availability. We safeguard protected health information through industry best
+  practices and full compliance with applicable security and regulatory requirements, supporting
+  our mission to deliver precision care solutions that clinicians and patients can trust.
+certifications:
+- HITRUST
+- ISO/IEC 27001:2022
+- ISO/IEC 42001:2023
+- HIPAA
+- GDPR
+notes:
+- HITRUST is listed as "Hitrust Certified"; the page does not name the assessment scope or
+  certification date.
+- ISO/IEC 42001:2023 is the AI management system standard — an uncommon claim outside of AI-first
+  vendors and notable for a diagnostics company running biomarker scoring models.
+- No SOC 2 claim is made on the page.
+- The page publishes no certificate artifacts, audit reports, subprocessor list, status page, or
+  request-access workflow — the certifications are named as text only.
+- No security contact, responsible-disclosure policy, or bug bounty is published anywhere on the
+  site (/.well-known/security.txt returns 404).
+related:
+- https://www.octavebio.com/privacy-policy
+- https://www.octavebio.com/terms-of-use
+evidence:
+- source: https://www.octavebio.com/trust-center
+  http_status: 200
+  fetched: '2026-08-04'
+  keywords:
+  - trust center
+  - hitrust
+  - iso/iec 27001
+  - iso/iec 42001
+  - hipaa
+  - gdpr
