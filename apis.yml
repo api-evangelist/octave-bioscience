@@ -10,6 +10,17 @@ description: 'Octave Bioscience is a precision neurology company founded in 2014
   J. Fox Foundation grant. Octave publishes a public trust center documenting HITRUST, ISO/IEC
   27001:2022, ISO/IEC 42001:2023, HIPAA and GDPR posture, but operates no public developer program,
   API reference, SDK or machine-readable specification.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/69ea29820ae8c216aa6d3eb3/69ee5d8d78bf430b8d8cc256_octave_logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/octave-bioscience/refs/heads/main/apis.yml
 x-type: company
